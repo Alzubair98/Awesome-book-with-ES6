@@ -1,3 +1,6 @@
+import {Books} from './firstModule.js';
+
+Books.addEventListeners();
 
 
 const listButton = document.querySelector('.nav-list');
@@ -24,3 +27,5 @@ contactButton.addEventListener('click', () => {
   addSection.classList.add('hide');
   contactSection.classList.remove('hide');
 });
+
+
