@@ -1,6 +1,18 @@
-import {Books} from './firstModule.js';
+const navBar = document.querySelector('.nav-bar')
 
+import {Books} from './firstModule.js';
 Books.addEventListeners();
+
+import { DateTime } from './luxon.js';
+
+const dt = DateTime.now();
+const timeDiv = document.createElement('div');
+timeDiv.classList.add('time');
+const Time = dt.toLocaleString(DateTime.DATETIME_MED);
+timeDiv.append(Time);
+
+navBar.after(timeDiv);
+
 
 
 const listButton = document.querySelector('.nav-list');

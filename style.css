@@ -137,3 +137,10 @@ section {
 .hide {
   display: none;
 }
+
+
+/* time */
+.time{
+  margin-left: 84%;
+  font-size: 1.5rem;
+}
