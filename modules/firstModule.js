@@ -23,13 +23,9 @@ export default class Books {
       return { title, author };
     }
 
-    static localStorageBooks() {
-      return JSON.parse(localStorage.getItem('books'));
-    }
+    static localStorageBooks = () => JSON.parse(localStorage.getItem('books'))
 
-    static getbook() {
-      return this.localStorageBooks();
-    }
+    static getbook = () => this.localStorageBooks()
 
   static createBook = (book, index) => {
     const divforbook = document.createElement('div');
