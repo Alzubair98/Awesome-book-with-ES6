@@ -9,7 +9,7 @@ const newbook = JSON.parse(localStorage.getItem('books')) || [];
 
 // ading new book to the list function
 
-export class Books {
+export default class Books {
     static addNewBook = (title, author) => {
       newbook.push(
         {

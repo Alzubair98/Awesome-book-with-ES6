@@ -1,11 +1,11 @@
-import { Books } from './firstModule.js';
+import Books from './firstModule.js';
 
 import { DateTime } from './luxon.js';
 
 const navBar = document.querySelector('.nav-bar');
 Books.addEventListeners();
 
-//adding time 
+// adding time
 
 const dt = DateTime.now();
 const timeDiv = document.createElement('div');
