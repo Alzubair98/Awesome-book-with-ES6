@@ -5,13 +5,16 @@ import { DateTime } from './luxon.js';
 const navBar = document.querySelector('.nav-bar');
 Books.addEventListeners();
 
+//adding time 
+
 const dt = DateTime.now();
 const timeDiv = document.createElement('div');
 timeDiv.classList.add('time');
 const Time = dt.toLocaleString(DateTime.DATETIME_MED);
 timeDiv.append(Time);
-
 navBar.after(timeDiv);
+
+// end of adding time secrtion
 
 const listButton = document.querySelector('.nav-list');
 const addButton = document.querySelector('.nav-add');
