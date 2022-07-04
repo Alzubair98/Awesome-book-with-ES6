@@ -1,9 +1,9 @@
-const navBar = document.querySelector('.nav-bar')
-
-import {Books} from './firstModule.js';
-Books.addEventListeners();
+import { Books } from './firstModule.js';
 
 import { DateTime } from './luxon.js';
+
+const navBar = document.querySelector('.nav-bar');
+Books.addEventListeners();
 
 const dt = DateTime.now();
 const timeDiv = document.createElement('div');
@@ -12,8 +12,6 @@ const Time = dt.toLocaleString(DateTime.DATETIME_MED);
 timeDiv.append(Time);
 
 navBar.after(timeDiv);
-
-
 
 const listButton = document.querySelector('.nav-list');
 const addButton = document.querySelector('.nav-add');
@@ -39,5 +37,3 @@ contactButton.addEventListener('click', () => {
   addSection.classList.add('hide');
   contactSection.classList.remove('hide');
 });
-
-
