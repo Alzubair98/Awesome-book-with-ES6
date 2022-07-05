@@ -13,7 +13,7 @@ Awsome books
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://alzubair98.github.io/Awesome-books/)
+[Live Demo Link](https://alzubair98.github.io/Awesome-book-with-ES6/)
 
 To get a local copy up and running follow these simple example steps.
 
